@@ -1,5 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -25,16 +25,16 @@ module.exports = {
           DEFAULT: '#1C2434',
           2: '#010101',
         },
-        red: {
-          ...colors.red,
-          DEFAULT: '#FB5454',
+        green: {
+          ...colors.green,
+          DEFAULT: '#2D3F3F', // Dark green base color
         },
         body: '#64748B',
         bodydark: '#AEB7C0',
         bodydark1: '#DEE4EE',
         bodydark2: '#8A99AF',
-        primary: '#3C50E0',
-        secondary: '#80CAEE',
+        primary: '#2D3F3F', // Changed to dark green
+        secondary: '#3D5656', // Slightly lighter green
         stroke: '#E2E8F0',
         gray: {
           ...colors.gray,
@@ -265,4 +265,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

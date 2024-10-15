@@ -1,33 +1,33 @@
-import { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
-import Loader from './common/Loader';
-import PageTitle from './components/PageTitle';
-import SignIn from './pages/Authentication/SignIn';
-import SignUp from './pages/Authentication/SignUp';
-import Calendar from './pages/Calendar';
-import Chart from './pages/Chart';
-import ECommerce from './pages/Dashboard/ECommerce';
-import FormElements from './pages/Form/FormElements';
-import FormLayout from './pages/Form/FormLayout';
-import Profile from './pages/Profile';
-import Settings from './pages/Settings';
-import Tables from './pages/Tables';
-import Alerts from './pages/UiElements/Alerts';
-import Buttons from './pages/UiElements/Buttons';
-import DefaultLayout from './layout/DefaultLayout';
+import Loader from './common/Loader'
+import PageTitle from './components/PageTitle'
+import SignIn from './pages/Authentication/SignIn'
+import SignUp from './pages/Authentication/SignUp'
+import Calendar from './pages/Calendar'
+import Chart from './pages/Chart'
+import ECommerce from './pages/Dashboard/ECommerce'
+import FormElements from './pages/Form/FormElements'
+import FormLayout from './pages/Form/FormLayout'
+import Profile from './pages/Profile'
+import Settings from './pages/Settings'
+import Tables from './pages/Tables'
+import Alerts from './pages/UiElements/Alerts'
+import Buttons from './pages/UiElements/Buttons'
+import DefaultLayout from './layout/DefaultLayout'
 
 function App() {
-  const [loading, setLoading] = useState<boolean>(true);
-  const { pathname } = useLocation();
+  const [loading, setLoading] = useState<boolean>(true)
+  const { pathname } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
+    setTimeout(() => setLoading(false), 1000)
+  }, [])
 
   return loading ? (
     <Loader />
@@ -38,7 +38,7 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match | Dashboard" />
               <ECommerce />
             </>
           }
@@ -47,7 +47,7 @@ function App() {
           path="/calendar"
           element={
             <>
-              <PageTitle title="Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Calendar" />
               <Calendar />
             </>
           }
@@ -56,7 +56,7 @@ function App() {
           path="/profile"
           element={
             <>
-              <PageTitle title="Profile | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Profile" />
               <Profile />
             </>
           }
@@ -65,7 +65,7 @@ function App() {
           path="/forms/form-elements"
           element={
             <>
-              <PageTitle title="Form Elements | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Form Elements" />
               <FormElements />
             </>
           }
@@ -74,7 +74,7 @@ function App() {
           path="/forms/form-layout"
           element={
             <>
-              <PageTitle title="Form Layout | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Form Layout" />
               <FormLayout />
             </>
           }
@@ -83,7 +83,7 @@ function App() {
           path="/tables"
           element={
             <>
-              <PageTitle title="Tables | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Tables" />
               <Tables />
             </>
           }
@@ -92,7 +92,7 @@ function App() {
           path="/settings"
           element={
             <>
-              <PageTitle title="Settings | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Settings" />
               <Settings />
             </>
           }
@@ -101,7 +101,7 @@ function App() {
           path="/chart"
           element={
             <>
-              <PageTitle title="Basic Chart | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Basic Chart" />
               <Chart />
             </>
           }
@@ -110,7 +110,7 @@ function App() {
           path="/ui/alerts"
           element={
             <>
-              <PageTitle title="Alerts | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Alerts" />
               <Alerts />
             </>
           }
@@ -119,7 +119,7 @@ function App() {
           path="/ui/buttons"
           element={
             <>
-              <PageTitle title="Buttons | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Buttons" />
               <Buttons />
             </>
           }
@@ -128,7 +128,7 @@ function App() {
           path="/auth/signin"
           element={
             <>
-              <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Signin" />
               <SignIn />
             </>
           }
@@ -137,14 +137,14 @@ function App() {
           path="/auth/signup"
           element={
             <>
-              <PageTitle title="Signup | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Signup" />
               <SignUp />
             </>
           }
         />
       </Routes>
     </DefaultLayout>
-  );
+  )
 }
 
-export default App;
+export default App
