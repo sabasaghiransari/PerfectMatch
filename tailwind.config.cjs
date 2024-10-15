@@ -27,14 +27,17 @@ module.exports = {
         },
         green: {
           ...colors.green,
-          DEFAULT: '#2D3F3F', // Dark green base color
+          DEFAULT: '#006241', // default medium green base color
+          medium: '#008751', // medium green base color
+          dark: '#006241', // dark green base color
+          light: '#00A86B', // light green base color
         },
         body: '#64748B',
         bodydark: '#AEB7C0',
         bodydark1: '#DEE4EE',
         bodydark2: '#8A99AF',
-        primary: '#2D3F3F', // Changed to dark green
-        secondary: '#3D5656', // Slightly lighter green
+        primary: '#006241', // dark green
+        secondary: '#008751', // medium green
         stroke: '#E2E8F0',
         gray: {
           ...colors.gray,
