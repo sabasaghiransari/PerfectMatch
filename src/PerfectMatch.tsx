@@ -21,39 +21,39 @@ const properties: Property[] = [
         id: 1,
         title: '104/29-35 Burlington Road, Homebush NSW 2140',
         image: prop1, // Add your image URL here
-        url: 'https://www.domain.com.au',
+        url: 'https://landbot.online/v3/H-2641630-TXJ8G3XR109PTFUN/index.html',
     },
     {
         id: 2,
         title: '10-14 Smallwood Avenue, Homebush NSW 2140',
         image: prop2, // Add your image URL here
-        url: 'https://www.domain.com.au'
+        url: 'https://landbot.online/v3/H-2641628-A6XBRU0SY087L1HY/index.html'
 
     },
     {
         id: 3,
         title: 'Level 6, 63/172-176 Parramatta Road, Homebush NSW 2140',
         image: prop3, // Add your image URL here
-        url: 'https://www.domain.com.au',
+        url: 'https://landbot.online/v3/H-2641626-6ODD7MJ0E0Z8WWVG/index.html',
     },
     {
         id: 4,
         title: '58/170 Parramatta Road, Homebush NSW 2140',
         image: prop4, // Add your image URL here
-        url: 'https://www.domain.com.au',
+        url: 'https://landbot.online/v3/H-2641630-TXJ8G3XR109PTFUN/index.html',
     },
     {
         id: 5,
         title: '501/7-11 Derowie Avenue, Homebush NSW 2140',
         image: prop5, // Add your image URL here
-        url: 'https://www.domain.com.au'
+        url: 'https://landbot.online/v3/H-2641628-A6XBRU0SY087L1HY/index.html'
 
     },
     {
         id: 6,
         title: '511/4-8 Smallwood Avenue, Homebush NSW 2140',
         image: prop6, // Add your image URL here
-        url: 'https://www.domain.com.au',
+        url: 'https://landbot.online/v3/H-2641626-6ODD7MJ0E0Z8WWVG/index.html',
     }
 ];
 
