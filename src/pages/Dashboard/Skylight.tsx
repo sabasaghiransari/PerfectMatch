@@ -30,7 +30,7 @@ const Skylight: React.FC = () => {
             />
           </svg>
         </CardDataStats>
-        <CardDataStats title="Total Profit" total="$45,2K" rate="4.35%" levelUp>
+        <CardDataStats title="Total Shortlist" total="$45,2K" rate="4.35%" levelUp>
           <svg
             className="fill-primary dark:fill-white"
             width="20"
@@ -53,7 +53,7 @@ const Skylight: React.FC = () => {
             />
           </svg>
         </CardDataStats>
-        <CardDataStats title="Total Product" total="2.450" rate="2.59%" levelUp>
+        <CardDataStats title="Total Engagement" total="2.450" rate="2.59%" levelUp>
           <svg
             className="fill-primary dark:fill-white"
             width="22"
@@ -72,7 +72,7 @@ const Skylight: React.FC = () => {
             />
           </svg>
         </CardDataStats>
-        <CardDataStats title="Total Users" total="3.456" rate="0.95%" levelDown>
+        <CardDataStats title="Audience Boost Views" total="3.456" rate="0.95%" levelDown>
           <svg
             className="fill-primary dark:fill-white"
             width="22"
