@@ -10,7 +10,7 @@ const Header = (props: {
   setSidebarOpen: (arg0: boolean) => void
 }) => {
   const location = useLocation()
-  const isSkylightRoute = location.pathname === '/skylight' // Adjust the path as needed
+  const isSkylightRoute = location.pathname.includes('skylight')
 
   return (
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
