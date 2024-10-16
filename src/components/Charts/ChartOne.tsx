@@ -8,14 +8,14 @@ const options: ApexOptions = {
     position: 'top',
     horizontalAlign: 'left',
   },
-  colors: ['#3C50E0', '#80CAEE'],
+  colors: ['#005837', '#80CAEE'],
   chart: {
     fontFamily: 'Satoshi, sans-serif',
     height: 335,
     type: 'area',
     dropShadow: {
       enabled: true,
-      color: '#623CEA14',
+      color: '#00583714',
       top: 10,
       blur: 4,
       left: 0,
@@ -70,7 +70,7 @@ const options: ApexOptions = {
   markers: {
     size: 4,
     colors: '#fff',
-    strokeColors: ['#3056D3', '#80CAEE'],
+    strokeColors: ['#005837', '#80CAEE'],
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -158,11 +158,11 @@ const ChartOne: React.FC = () => {
             </div>
           </div>
           <div className="flex min-w-47.5">
-            <span className="mt-1 mr-2 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-secondary">
-              <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"></span>
+            <span className="mt-1 mr-2 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-[#80CAEE]">
+              <span className="block h-2.5 w-full max-w-2.5 rounded-full bg-[#80CAEE]"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-secondary">Total Calls/SMS</p>
+              <p className="font-semibold text-[#80CAEE]">Total Calls/SMS</p>
               <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
