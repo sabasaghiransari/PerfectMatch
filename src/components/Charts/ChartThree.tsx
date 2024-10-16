@@ -12,7 +12,7 @@ const options: ApexOptions = {
     type: 'donut',
   },
   colors: ['#005837', '#0EA800', '#8FD0EF', '#0FADCF'],
-  labels: ['Desktop', 'Tablet', 'Mobile', 'Unknown'],
+  labels: ['for Sale', 'Under Offer', 'Sold', 'Unknown'],
   legend: {
     show: false,
     position: 'bottom',
@@ -113,11 +113,10 @@ const ChartThree: React.FC = () => {
           <ReactApexChart options={options} series={state.series} type="donut" />
         </div>
       </div>
-
       <div className="-mx-8 flex flex-wrap items-center justify-center gap-y-3">
         <div className="sm:w-1/2 w-full px-8">
           <div className="flex w-full items-center">
-            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-primary"></span>
+            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#005837]"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> for Sale </span>
               <span> 65% </span>
@@ -126,7 +125,7 @@ const ChartThree: React.FC = () => {
         </div>
         <div className="sm:w-1/2 w-full px-8">
           <div className="flex w-full items-center">
-            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#6577F3]"></span>
+            <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#0EA800]"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> Under Offer </span>
               <span> 34% </span>
