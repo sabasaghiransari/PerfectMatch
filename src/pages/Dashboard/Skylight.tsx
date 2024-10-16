@@ -5,9 +5,75 @@ import ChartThree from '../../components/Charts/ChartThree'
 import ChartTwo from '../../components/Charts/ChartTwo'
 import ChatCard from '../../components/Chat/ChatCard'
 import MapOne from '../../components/Maps/MapOne'
-import TableOne from '../../components/Tables/TableOne'
+import PropertyGrid from '../../components/PropertyGrid'
+import { Property } from '../../types/property'
 
 const Skylight: React.FC = () => {
+  const properties: Property[] = [
+    {
+      image: '/src/images/properties/p0.jpeg',
+      address: '20 Midelton Avenue, North Bondi NSW',
+      type: 'House',
+      bedrooms: 4,
+      bathrooms: 3,
+      parking: 1,
+      auctionDate: 'Thu 7 Nov 2024',
+      daysOnMarket: '4d on market',
+    },
+    {
+      image: '/src/images/properties/p1.jpeg',
+      address: '8/44 Military Road, North Bondi NSW',
+      type: 'Apartment / Unit / Flat',
+      bedrooms: 1,
+      bathrooms: 1,
+      auctionDate: 'Thu 7 Nov 2024',
+      daysOnMarket: '4d on market',
+    },
+    {
+      image: '/src/images/properties/p2.jpeg',
+      address: "141 O'Sullivan Road, Bellevue Hill NSW",
+      type: 'House',
+      bedrooms: 3,
+      bathrooms: 1,
+      parking: 1,
+      auctionDate: 'Wed 30 Oct 2024',
+      daysOnMarket: '5d on market',
+    },
+    {
+      image: '/src/images/properties/p3.jpeg',
+      address: '25 Brighton Boulevard, Bondi Beach NSW',
+      type: 'House',
+      bedrooms: 4,
+      bathrooms: 3,
+      parking: 2,
+      area: 240,
+      daysOnMarket: '5d on market',
+      price: 'For Sale',
+    },
+    {
+      image: '/src/images/properties/p4.jpeg',
+      address: '13 Shaw Street, North Bondi NSW',
+      type: 'House',
+      bedrooms: 4,
+      bathrooms: 2,
+      parking: 1,
+      area: 240,
+      auctionDate: 'Sat 2 Nov 2024',
+      daysOnMarket: '6d on market',
+      price: 'Buyers Guide | $3,500,000',
+    },
+    {
+      image: '/src/images/properties/p5.jpeg',
+      address: '6/89 Ocean Street, Woollahra NSW',
+      type: 'Apartment / Unit / Flat',
+      bedrooms: 4,
+      bathrooms: 3,
+      parking: 2,
+      auctionDate: 'Thu 7 Nov 2024',
+      daysOnMarket: '6d on market',
+    },
+  ]
+
   return (
     <>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
@@ -103,7 +169,7 @@ const Skylight: React.FC = () => {
         <ChartThree />
         <MapOne />
         <div className="col-span-12 xl:col-span-8">
-          <TableOne />
+          <PropertyGrid properties={properties} />
         </div>
         <ChatCard />
       </div>
