@@ -68,7 +68,7 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="Domain Leap 2024 Perfect Match | Home" />
+              <PageTitle title="Domain Leap 2024 Perfect Match" />
               <PerfectMatch />
             </>
           }
