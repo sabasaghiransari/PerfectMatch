@@ -1,4 +1,5 @@
-export type Chat = {
+export type UserProfile = {
+  id: string,
   avatar: string;
   name: string;
   text: string;

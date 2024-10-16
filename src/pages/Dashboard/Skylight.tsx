@@ -3,7 +3,7 @@ import CardDataStats from '../../components/CardDataStats'
 import ChartOne from '../../components/Charts/ChartOne'
 import ChartThree from '../../components/Charts/ChartThree'
 import ChartTwo from '../../components/Charts/ChartTwo'
-import ChatCard from '../../components/Chat/ChatCard'
+import UserCard from '../../components/Chat/UserCard.tsx'
 import MapOne from '../../components/Maps/MapOne'
 import PropertyGrid from '../../components/PropertyGrid'
 import { Property } from '../../types/property'
@@ -178,7 +178,7 @@ const Skylight: React.FC = () => {
         <div className="col-span-12 xl:col-span-8">
           <PropertyGrid properties={properties} />
         </div>
-        <ChatCard />
+        <UserCard />
       </div>
     </>
   )
