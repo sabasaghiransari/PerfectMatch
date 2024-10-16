@@ -101,7 +101,7 @@ function App() {
           }
         />
         <Route
-          path="/profile"
+          path="/profile/:id"
           element={
             <>
               <PageTitle title="Domain Leap 2024 Perfect Match Dashboard | Profile" />
