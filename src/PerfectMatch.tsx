@@ -3,16 +3,15 @@ import './css/style.css';
 import prop1 from './images/shortlist/Prop1.png';
 import prop2 from './images/shortlist/Prop2.png';
 import prop3 from './images/shortlist/Prop3.png';
+import prop4 from './images/shortlist/Prop4.png';
+import prop5 from './images/shortlist/Prop5.png';
+import prop6 from './images/shortlist/Prop6.png';
 
 // Interface for property data
 interface Property {
     id: number;
     title: string;
-    priceRange: string;
-    address: string;
     image: string;
-    rating: number;
-    comments: string;
     url: string;
 }
 
@@ -21,34 +20,41 @@ const properties: Property[] = [
     {
         id: 1,
         title: '104/29-35 Burlington Road, Homebush NSW 2140',
-        priceRange: '$758,000 - $788,000',
-        address: 'Homebush NSW 2140',
         image: prop1, // Add your image URL here
-        rating: 5,
-        comments: 'LOVED this apartment, the design was incredible!',
-        url: 'https://www.domain.com.au/104-29-35-burlington-road-homebush-nsw-2140-2019539829',
+        url: 'https://www.domain.com.au',
     },
     {
         id: 2,
-        title: 'Level 6, 63/172-176 Parramatta Road, Homebush NSW 2140',
-        priceRange: '$620,000 - $650,000',
-        address: 'Homebush NSW 2140',
+        title: '10-14 Smallwood Avenue, Homebush NSW 2140',
         image: prop2, // Add your image URL here
-        rating: 3,
-        comments: 'Had a weird vibe',
-        url: 'https://www.domain.com.au/level-6-63-172-176-parramatta-road-homebush-nsw-2140-2019552786'
+        url: 'https://www.domain.com.au'
 
     },
     {
         id: 3,
-        title: '501/7-11 Derowie Avenue, Homebush NSW 2140',
-        priceRange: 'For Sale | Just Listed',
-        address: 'Homebush NSW 2140',
+        title: 'Level 6, 63/172-176 Parramatta Road, Homebush NSW 2140',
         image: prop3, // Add your image URL here
-        rating: 4,
-        comments: '',
-        url: 'https://www.domain.com.au/501-7-11-derowie-avenue-homebush-nsw-2140-2019556729',
+        url: 'https://www.domain.com.au',
     },
+    {
+        id: 4,
+        title: '58/170 Parramatta Road, Homebush NSW 2140',
+        image: prop4, // Add your image URL here
+        url: 'https://www.domain.com.au',
+    },
+    {
+        id: 5,
+        title: '501/7-11 Derowie Avenue, Homebush NSW 2140',
+        image: prop5, // Add your image URL here
+        url: 'https://www.domain.com.au'
+
+    },
+    {
+        id: 6,
+        title: '511/4-8 Smallwood Avenue, Homebush NSW 2140',
+        image: prop6, // Add your image URL here
+        url: 'https://www.domain.com.au',
+    }
 ];
 
 
@@ -56,8 +62,7 @@ const PerfectMatch: React.FC = () => {
     const [selectedUrl, setSelectedUrl] = useState<string>(properties[0].url);
 
     const handlePropertyClick = (property: Property) => {
-        setSelectedUrl(property.url); // Update the URL to load in the iframe
-
+        setSelectedUrl(property.url);
     };
 
     return (
