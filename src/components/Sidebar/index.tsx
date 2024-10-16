@@ -175,12 +175,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </li>
               {/* <!-- Menu Item Chart --> */}
 
-              {/* <!-- Menu Item Profile --> */}
+              {/* <!-- Menu Item Contacts --> */}
               <li>
                 <NavLink
-                  to="/profile"
+                  to="/contacts"
                   className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-teal-600 dark:hover:bg-meta-4 ${
-                    pathname.includes('profile') && 'bg-green-50 text-green-800 dark:bg-meta-4'
+                    pathname.includes('contacts') && 'bg-green-50 text-green-800 dark:bg-meta-4'
                   }`}
                 >
                   <svg
@@ -203,7 +203,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   Contacts
                 </NavLink>
               </li>
-              {/* <!-- Menu Item Profile --> */}
+              {/* <!-- Menu Item Contacts --> */}
 
               {/* <!-- Menu Item Settings --> */}
               <li>
