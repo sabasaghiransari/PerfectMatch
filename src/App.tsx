@@ -17,6 +17,8 @@ import Buttons from './pages/UiElements/Buttons'
 import DefaultLayout from './layout/DefaultLayout'
 import PerfectMatch from './PerfectMatch'
 import Skylight from './pages/Dashboard/Skylight'
+import PropertyDetail from './components/PropertyDetail'
+import { properties } from './pages/Properties'
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -33,28 +35,29 @@ function App() {
   useEffect(() => {
     const initLandbot = () => {
       if (!(window as any).myLandbot) {
-        const s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
+        const s = document.createElement('script')
+        s.type = 'text/javascript'
+        s.async = true
         s.addEventListener('load', () => {
-          (window as any).myLandbot = new (window as any).Landbot.Livechat({
-            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2638307-PUHRTDQ9ZE3LS7HN/index.json',
-          });
-        });
-        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-        const x = document.getElementsByTagName('script')[0];
-        x.parentNode?.insertBefore(s, x);
+          ;(window as any).myLandbot = new (window as any).Landbot.Livechat({
+            configUrl:
+              'https://storage.googleapis.com/landbot.online/v3/H-2638307-PUHRTDQ9ZE3LS7HN/index.json',
+          })
+        })
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js'
+        const x = document.getElementsByTagName('script')[0]
+        x.parentNode?.insertBefore(s, x)
       }
-    };
+    }
 
-    window.addEventListener('mouseover', initLandbot, { once: true });
-    window.addEventListener('touchstart', initLandbot, { once: true });
+    window.addEventListener('mouseover', initLandbot, { once: true })
+    window.addEventListener('touchstart', initLandbot, { once: true })
 
     return () => {
-      window.removeEventListener('mouseover', initLandbot);
-      window.removeEventListener('touchstart', initLandbot);
-    };
-  }, []);
+      window.removeEventListener('mouseover', initLandbot)
+      window.removeEventListener('touchstart', initLandbot)
+    }
+  }, [])
 
   return loading ? (
     <Loader />
@@ -74,8 +77,17 @@ function App() {
           path="/skylight"
           element={
             <>
-              <PageTitle title="Domain Leap 2024 Perfect Match | Dashboard" />
+              <PageTitle title="Domain Leap 2024 Perfect Match | Skylight" />
               <Skylight />
+            </>
+          }
+        />
+        <Route
+          path="/skylight/property/:id"
+          element={
+            <>
+              <PageTitle title="Domain Leap 2024 Perfect Match | Property Detail" />
+              <PropertyDetail properties={properties} />
             </>
           }
         />
