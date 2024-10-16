@@ -69,5 +69,6 @@ export const properties: Property[] = [
     parking: 2,
     auctionDate: 'Thu 7 Nov 2024',
     daysOnMarket: '6d on market',
+    price: 'Auction'
   },
 ]
