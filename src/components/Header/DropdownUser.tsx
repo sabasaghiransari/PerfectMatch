@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import ClickOutside from '../ClickOutside';
-import UserOne from '../../images/user/user-01.png';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import ClickOutside from '../ClickOutside'
+import UserOne from '../../images/user/user-01.png'
 
 const DropdownUser = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
   return (
     <ClickOutside onClick={() => setDropdownOpen(false)} className="relative">
@@ -14,10 +14,8 @@ const DropdownUser = () => {
         to="#"
       >
         <span className="hidden text-right lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
-            Thomas Anree
-          </span>
-          <span className="block text-xs">UX Designer</span>
+          <span className="block text-sm font-medium text-black dark:text-white">Thomas Anree</span>
+          <span className="block text-xs">Corporate Accounts Partner</span>
         </span>
 
         <span className="h-12 w-12 rounded-full">
@@ -143,7 +141,7 @@ const DropdownUser = () => {
       )}
       {/* <!-- Dropdown End --> */}
     </ClickOutside>
-  );
-};
+  )
+}
 
-export default DropdownUser;
+export default DropdownUser
