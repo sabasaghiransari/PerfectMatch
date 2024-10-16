@@ -8,10 +8,17 @@ import MapOne from '../../components/Maps/MapOne'
 import PropertyGrid from '../../components/PropertyGrid'
 import { Property } from '../../types/property'
 
+import property0 from '../../images/properties/p0.jpeg'
+import property1 from '../../images/properties/p1.jpeg'
+import property2 from '../../images/properties/p2.jpeg'
+import property3 from '../../images/properties/p3.jpeg'
+import property4 from '../../images/properties/p4.jpeg'
+import property5 from '../../images/properties/p5.jpeg'
+
 const Skylight: React.FC = () => {
   const properties: Property[] = [
     {
-      image: '/src/images/properties/p0.jpeg',
+      image: property0,
       address: '20 Midelton Avenue, North Bondi NSW',
       type: 'House',
       bedrooms: 4,
@@ -21,7 +28,7 @@ const Skylight: React.FC = () => {
       daysOnMarket: '4d on market',
     },
     {
-      image: '/src/images/properties/p1.jpeg',
+      image: property1,
       address: '8/44 Military Road, North Bondi NSW',
       type: 'Apartment / Unit / Flat',
       bedrooms: 1,
@@ -30,7 +37,7 @@ const Skylight: React.FC = () => {
       daysOnMarket: '4d on market',
     },
     {
-      image: '/src/images/properties/p2.jpeg',
+      image: property2,
       address: "141 O'Sullivan Road, Bellevue Hill NSW",
       type: 'House',
       bedrooms: 3,
@@ -40,7 +47,7 @@ const Skylight: React.FC = () => {
       daysOnMarket: '5d on market',
     },
     {
-      image: '/src/images/properties/p3.jpeg',
+      image: property3,
       address: '25 Brighton Boulevard, Bondi Beach NSW',
       type: 'House',
       bedrooms: 4,
@@ -51,7 +58,7 @@ const Skylight: React.FC = () => {
       price: 'For Sale',
     },
     {
-      image: '/src/images/properties/p4.jpeg',
+      image: property4,
       address: '13 Shaw Street, North Bondi NSW',
       type: 'House',
       bedrooms: 4,
@@ -63,7 +70,7 @@ const Skylight: React.FC = () => {
       price: 'Buyers Guide | $3,500,000',
     },
     {
-      image: '/src/images/properties/p5.jpeg',
+      image: property5,
       address: '6/89 Ocean Street, Woollahra NSW',
       type: 'Apartment / Unit / Flat',
       bedrooms: 4,
